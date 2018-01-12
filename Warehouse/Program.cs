@@ -12,7 +12,7 @@ namespace Warehouse
             store.OrderEquipment();
             WorkSpace obj = store.objPool.GiveEquipmentWorker();
 
-            Console.WriteLine("Wartosc licznika w klasie Warehouse: " + store.objPool.counter);
+            Console.WriteLine("The value of the counter in the Warehouse class: " + store.objPool.counter);
 
             store.CheckThatWorkerWasFired(obj,true);
 
@@ -20,7 +20,7 @@ namespace Warehouse
 
             store.FireAnEmployee(obj);
 
-            Console.WriteLine("Wartosc licznika w klasie Warehouse: "+store.objPool.counter);
+            Console.WriteLine("The value of the counter in the Warehouse class: "+store.objPool.counter);
 
             store.CheckThatWorkerWasFired(obj, false);
 
