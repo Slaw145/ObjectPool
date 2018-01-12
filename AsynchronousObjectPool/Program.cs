@@ -15,7 +15,7 @@ namespace AsynchronousObjectPool
                 PooledObject obj = objPool.acquireReusable();
                 objPool.ReleaseReusable(obj);
                 Console.WriteLine(obj.CreatedAt);
-                Console.WriteLine("Jest pierwszy watek");
+                Console.WriteLine("This is the first thread");
             });
 
             Task task2 = Task.Run(() =>
@@ -25,7 +25,7 @@ namespace AsynchronousObjectPool
                 PooledObject obj = objPool.acquireReusable();
                 objPool.ReleaseReusable(obj);
                 Console.WriteLine(obj.CreatedAt);
-                Console.WriteLine("Jest drugi watek");
+                Console.WriteLine("This is the second thread");
             });
 
             Console.ReadKey();
