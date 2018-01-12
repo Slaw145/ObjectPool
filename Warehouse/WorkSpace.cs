@@ -19,7 +19,7 @@ namespace Warehouse
 
         public void IfWorkerWasFired()
         {
-            Console.WriteLine("Pracownik zostal zwolniony");
+            Console.WriteLine("The employee was released");
         }
     }
 }
